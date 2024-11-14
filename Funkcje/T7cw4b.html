@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const ocena = parseInt(prompt("Podaj ocenę"));
+
+        const z = (ocena) => {
+            let komentarz;
+
+            if (ocena === 1 || ocena === 2) {
+                komentarz = "Sporo pracy przed Tobą";
+            } else if (ocena === 3) {
+                komentarz = "Jeszcze trochę, a będzie ok";
+            } else if (ocena === 4) {
+                komentarz = "Okej";
+            } else if (ocena === 5) {
+                komentarz = "Okej";
+            } else if (ocena === 6) {
+                komentarz = "Okej";
+            } else {
+                komentarz = "Nieprawidłowa ocena";
+            }
+
+            alert(`${komentarz}`);
+        }
+
+        z(ocena);
+    </script>
+</head>
+<body>
+</body>
+</html>

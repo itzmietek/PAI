@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const auta = ["BMW", "Toyota", "Opel", "Skoda" , "Skoda"];
+        const lubię = [auta[1], auta[2]]; 
+        const nieLubię = [auta[0], auta[3]]; 
+        const zdanie = `Lubię samochody marki ${lubię.join(' i ')}, nie lubię ${nieLubię.join(' i ')}.`;
+        document.body.innerHTML = `<p>${zdanie}</p>`;
+     </script>
+
+</body>
+</html>

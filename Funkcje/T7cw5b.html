@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let kontynuacja = "tak"; 
+        while (kontynuacja != "nie") {
+            const a = parseInt(prompt("Podaj pierwszy bok"));
+            const b = parseInt(prompt("Podaj drugi bok"));
+            const h = parseInt(prompt("Podaj wysokość"));
+
+            const obliczenie = (a, b, h) => ((a + b) / 2) * h;
+
+            alert("Pole trapezu wynosi: " + obliczenie(a, b, h));
+            kontynuacja = prompt("Czy chcesz kontynuować?");
+        }
+    </script>
+</body>
+</html>

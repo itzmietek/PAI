@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Osób</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: #ffffff;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jan Kowalski</h1>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Wiek</th>
+                <th>Wzrost (cm)</th>
+                <th>Data Urodzenia</th>
+                <th>Klasa</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script>
+        const pola = ["Imię", "Nazwisko", "Wiek", "Wzrost (cm)", "Data Urodzenia", "Klasa"];
+        const osoba = [];
+        pola.forEach(pole => {
+            const input = prompt(`Podaj ${pole}:`);
+            osoba.push(input);
+        });
+        
+        const tableBody = document.getElementById('tableBody');
+        const row = document.createElement('tr');
+        
+        osoba.forEach(data => {
+            const cell = document.createElement('td');
+            cell.textContent = data; 
+            row.appendChild(cell);
+        });
+        
+        tableBody.appendChild(row);
+    </script>
+</body>
+</html>

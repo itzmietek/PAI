@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lista zakupów</h1>
+    <ol id="lista-zakupów"></ol>
+    <script>
+        const produkty = ["Mleko", "Jajka", "Płatki śniadaniowe", "Salami", "Sok"];
+        const lista = document.getElementById('lista-zakupów');
+        produkty.forEach(produkt => {
+            lista.innerHTML += `<li>${produkt}</li>`;
+        });
+    </script>
+</body>
+</html>

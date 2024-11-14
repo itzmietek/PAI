@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getMinimum = (num1, num2) => Math.min(num1, num2);
+        const getMaximum = (num1, num2) => Math.max(num1, num2);
+        const getAverage = (num1, num2) => (num1 + num2) / 2;
+
+        const main = () => {
+            const number1 = parseFloat(prompt("Podaj pierwszą liczbę:"));
+            const number2 = parseFloat(prompt("Podaj drugą liczbę:"));
+
+            const minimum = getMinimum(number1, number2);
+            const maximum = getMaximum(number1, number2);
+            const average = getAverage(number1, number2);
+
+            alert(`Minimum: ${minimum}\nMaksimum: ${maximum}\nŚrednia: ${average}`);
+        };
+
+        main();
+    </script>
+</body>
+</html>

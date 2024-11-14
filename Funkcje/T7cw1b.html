@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const t = "Wynik dodawania to : ";
+        const z = "Wynik odejmowania to : ";
+        const o = "Wynik mnozenia to : ";
+        const x = "Wynik dzielenia to : ";
+        const dodawanie = (a, b) => a + b;
+
+        const odejmowanie = (a, b) => a - b;
+
+        const mnozenie = (a, b) => a * b;
+
+        const dzielenie = (a, b) => b === 0 ? "Nie można dzielić przez zero!" : a / b;
+
+        const liczby = () => {
+            const a = parseInt(prompt("Podaj pierwszą liczbę"));
+            const b = parseInt(prompt("Podaj drugą liczbę"));
+            
+            alert(t + dodawanie(a, b));
+            alert(z + odejmowanie(a, b));
+            alert(o + mnozenie(a, b));
+            alert(x + dzielenie(a, b));
+        };
+
+        liczby();  
+    </script>
+</body>
+</html>

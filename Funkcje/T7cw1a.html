@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let t = "Wynik dodawania to : ";
+        let z = "Wynik odejmowania to : ";
+        let x = "wynik mnozenia to : ";
+        let o = "wynik dzielenia to : ";
+        function dodawanie(a, b) {
+            return a + b;
+        }
+
+        function odejmowanie(a, b) {
+            return a - b;
+        }
+
+        function mnozenie(a, b) {
+            return a * b;
+        }
+
+        function dzielenie(a, b) {
+            if (b === 0) {
+                return "Nie można dzielić przez zero!";
+            } else {
+                return a / b;
+            }
+        }
+
+        function liczby() {
+            const a = parseInt(prompt("Podaj pierwszą liczbę"));
+            const b = parseInt(prompt("Podaj drugą liczbę"));
+            
+            alert(t+dodawanie(a, b));
+            alert(z+odejmowanie(a, b));
+            alert(x+mnozenie(a, b));
+            alert(o+dzielenie(a, b));
+        }
+
+        liczby();  
+    </script>
+</body>
+</html>

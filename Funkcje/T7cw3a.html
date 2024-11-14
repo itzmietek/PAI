@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Minimum(num1, num2) {
+            return Math.min(num1, num2);
+        }
+        function Maximum(num1, num2) {
+            return Math.max(num1, num2);
+        }
+        function Average(num1, num2) {
+            return (num1 + num2) / 2;
+        }
+        function main() {
+            const number1 = parseInt(prompt("Podaj pierwszą liczbę:"));
+            const number2 = parseInt(prompt("Podaj drugą liczbę:"));
+
+            const minimum = Minimum(number1, number2);
+            const maximum = Maximum(number1, number2);
+            const average = Average(number1, number2);
+
+            alert(`Minimum: ${minimum}\nMaksimum: ${maximum}\nŚrednia: ${average}`);
+        }
+
+        main();
+    </script>
+</body>
+</html>
